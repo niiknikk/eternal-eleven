@@ -1,0 +1,59 @@
+.header{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    @include respond(phone){
+        padding: 0 20px;
+    }
+
+
+    
+    &-container{
+        position: relative;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        @include respond(phone){
+            width: 100%;
+        }
+
+
+        & .heading-primary{
+            width: 85%;
+            @include respond(phone){
+                width: 100%;
+            }
+    
+        }
+        & p {
+            width: 70%;
+            @include respond(phone){
+                width: 100%;
+            }
+    
+        }
+    }
+    & .hero-img{
+        transform:translateY(0) scale(.95);
+        transition: all 0.2s ease-in;
+        
+        @include respond(phone){
+            width: 100%;
+        }
+
+        &:hover{
+            transform:translateY(-5px) scale(1.05);
+
+        }
+    }
+}

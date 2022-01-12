@@ -1,0 +1,50 @@
+.story{
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    @include respond(phone){
+        padding: 30px 20px;
+    }
+    
+    &-container{
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 45px;
+        @include respond(tab-port){
+            flex-direction: column;
+            align-items: center;
+        }
+        @include respond(phone){
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    &-content{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        @include respond(tab-port){
+            width: 100%;
+            gap: 15px;
+        }
+    }
+    &-img{
+        width: 50%;
+        @include respond(tab-port){
+            width: 100%;
+        }
+        & img{
+            width: 100%;
+        }
+    }
+}

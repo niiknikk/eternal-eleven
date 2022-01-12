@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Eleven</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <nav class="">
+        <a href="/" class="logo"><img src="./img/logo.png" alt=""></a>
+        <ul class="nav-links ">
+            <li><a href="#WhyAlivio" class="text-paragraph-16 nav-link">Home</a></li>
+            <li><a href="#showcase" class="text-paragraph-16 nav-link">About us</a></li>
+            <li><a href="#story" class="text-paragraph-16 nav-link">Our regular clans</a></li>
+            <li><a href="/" class="text-paragraph-16 nav-link">Competitive</a></li>
+            <li><a href="/" class="text-paragraph-16 nav-link">Contact us</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <div class="line-1 line"></div>
+            <div class="line-2 line"></div>
+            <div class="line-3 line"></div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="heading-primary">Everything you need clash of clans, victory is here</h1>
+            <p class="text-paragraph-18">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type ...</p>
+            <img src="./img/hero-img.png" alt="" class="hero-img">
+        </div>
+    </header>
+    <section class="status">
+        <h2 class="heading-secondary">Season Statics</h2>
+        <div class="status-container">
+            <div class="status-card">
+                <img src="./img/status.png" alt="">
+                <h3 class="heading-tertiary">TEAMS COMPETING</h3>
+            </div>
+            <div class="status-card">
+                <img src="./img/status.png" alt="">
+                <h3 class="heading-tertiary">TEAMS COMPETING</h3>
+            </div>
+            <div class="status-card">
+                <img src="./img/status.png" alt="">
+                <h3 class="heading-tertiary">TEAMS COMPETING</h3>
+            </div>
+            <div class="status-card">
+                <img src="./img/status.png" alt="">
+                <h3 class="heading-tertiary">TEAMS COMPETING</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="testimonial">
+        <h2 class="heading-secondary">Testimonials</h2>
+        <div class="testimonial-container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="./img/man.png" alt="">
+                            <p class="text-paragraph-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+                                quas
+                                accusantium fugit numquam doloremque consectetur veniam, consequuntur debitis optio
+                                magnam.</p>
+                            <div class="testimonial-card-heading">
+                                <h3 class="text-heading-20">Betz</h3>
+                                <h4 class="text-heading-16">King of Kings</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="./img/man-3.png" alt="">
+                            <p class="text-paragraph-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+                                quas
+                                accusantium fugit numquam doloremque consectetur veniam, consequuntur debitis optio
+                                magnam.</p>
+                            <div class="testimonial-card-heading">
+                                <h3 class="text-heading-20">Betz</h3>
+                                <h4 class="text-heading-16">King of Kings</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="./img/super-mario.png" alt="">
+                            <p class="text-paragraph-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+                                quas
+                                accusantium fugit numquam doloremque consectetur veniam, consequuntur debitis optio
+                                magnam.</p>
+                            <div class="testimonial-card-heading">
+                                <h3 class="text-heading-20">Betz</h3>
+                                <h4 class="text-heading-16">King of Kings</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="showcase">
+        <div class="showcase-container">
+            <div class="showcase-content">
+                <h2 class="heading-secondary">Now recruiting for Eternal Eleven: Join the game and Play with us</h2>
+                <p class="text-paragraph-16">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Modi, doloremque.</p>
+                <a href="" class="btn btn-primary">Let’s Play Together</a>
+            </div>
+            <div id="show-video" class="showcase-img">
+                <img src="./img/showcase.jpg" class="hero-img" alt="">
+                <img src="./img/play-white.png" class="play-img" alt="">
+            </div>
+    </section>
+
+    <!-- youtube pop-up -->
+    <section class="youtube" id="pop-up">
+        <iframe src="https://www.youtube.com/embed/vcghyX1cglE" id="iframe" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </section>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
