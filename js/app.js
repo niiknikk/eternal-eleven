@@ -1,17 +1,3 @@
-
-// for adding scroll effect on navbar
-// window.addEventListener('scroll', fixNav);
-
-// function fixNav() {
-//         const nav = document.querySelector('nav')
-//         if (window.scrollY > nav.offsetHeight + 100) {
-//                 nav.classList.add('nav-scroll-effect');
-//         }
-//         else {
-//                 nav.classList.remove('nav-scroll-effect');
-//         }
-// }
-
 const navSlide = () => {
         const menu = document.querySelector('.hamburger-menu')
         const nav = document.querySelector('.nav-links')
@@ -30,8 +16,15 @@ const navSlide = () => {
                         }
                 })
         })
+
 }
 navSlide()
+// footer year
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById('year').innerText = year
+
 
 
 
